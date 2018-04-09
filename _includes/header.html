@@ -1,19 +1,25 @@
 <header class="header {{ page.layout | downcase | escape }}" role="banner">
 
-  <div class="container">
+  <div class="header-top">
+    <div class="container">
 
-    <div class="grid-middle">
+      <div class="grid-middle">
 
-      <div class="col-4_sm-12 text-center-sm padding-sm">
-        <a class="logo" href="{{ "/" | relative_url }}"><img src="{{ "/assets/images/logo.png" | relative_url }}"/></a>
-      </div>
+        <div class="col-4_sm-12 text-center-sm padding-sm">
+          <a class="logo" href="{{ "/" | relative_url }}"><img src="{{ "/assets/images/logo.png" | relative_url }}"/></a>
+        </div>
 
-      <div class="col-8_sm-12 text-right text-center-sm">
-        {% include nav-section.html %}
+        <div class="col-8_sm-12 text-right text-center-sm">
+          {% include nav-section.html %}
+        </div>
+
       </div>
 
     </div>
+  </div>
 
+  <div class="header-bottom">
+    <p>Celebrating its 19th season, this summer's performance dates are July 7 and 8 at 6:30 pm and July 13, 14, and 15 at 7:30 pm</p>
   </div>
 
 </header>
