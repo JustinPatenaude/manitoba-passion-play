@@ -2181,6 +2181,8 @@ template {
 [hidden] {
   display: none; }
 
+/* Variables
+=================================*/
 /* Default
 =================================*/
 * {
@@ -2189,14 +2191,90 @@ template {
 body {
   position: relative;
   font-family: 'Lato', sans-serif;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 24px;
+  color: #fff;
+  background: #000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 40px; }
+
+h2 {
+  font-size: 32px; }
+
+h3 {
+  font-size: 24px; }
+
+h4, h5, h6 {
+  font-size: 16px; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
 img {
   display: block; }
+
+strong {
+  font-weight: 700; }
+
+blockquote {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 24px 0; }
+  blockquote p {
+    position: relative;
+    z-index: 5; }
+  blockquote cite {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    font-style: italic;
+    text-align: right; }
+  blockquote:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px;
+    z-index: 1;
+    display: block;
+    width: 30px;
+    height: 28px;
+    background-image: url("/assets/images/quote-left.svg");
+    background-repeat: no-repeat;
+    opacity: 0.25; }
+  blockquote:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    z-index: 1;
+    display: block;
+    width: 30px;
+    height: 28px;
+    background-image: url("/assets/images/quote-right.svg");
+    background-repeat: no-repeat;
+    opacity: 0.25; }
+
+/* Global
+=================================*/
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #926BA2;
+  border-radius: 4px; }
+  .button:hover {
+    text-decoration: none;
+    background: #704F7D; }
 
 /* Header
 =================================*/
@@ -2205,8 +2283,10 @@ img {
   top: 0;
   left: 0;
   z-index: 5;
-  width: 100%;
-  padding: 24px;
+  width: 100%; }
+
+.header-top {
+  padding: 16px;
   background: rgba(0, 0, 0, 0.4); }
 
 .logo {
@@ -2216,10 +2296,45 @@ img {
     width: 100%; }
 
 .nav-link {
-  font-weight: 900;
-  text-transform: uppercase; }
+  margin-right: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none; }
+
+.header-bottom {
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  background: rgba(146, 107, 162, 0.4); }
+  .header-bottom p {
+    margin: 0;
+    font-size: 12px; }
 
 /* Home
 =================================*/
-.banner img {
-  width: 100%; }
+.banner {
+  position: relative; }
+  .banner img {
+    width: 100%; }
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  z-index: 5;
+  width: 40%;
+  transform: translate(0, -50%); }
+  .banner-text h2 {
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 72px;
+    text-transform: none;
+    color: #fff; }
+
+.home-section {
+  padding: 40px 0; }
+
+.home-testimonials {
+  text-align: center;
+  background: #926BA2; }
