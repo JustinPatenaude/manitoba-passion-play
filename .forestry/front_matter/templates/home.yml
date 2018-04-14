@@ -1,0 +1,41 @@
+---
+hide_body: true
+is_partial: false
+fields:
+- type: field_group
+  name: top_section
+  label: Top section
+  fields:
+  - type: text
+    name: top_section_title
+    label: Top section title
+  - type: textarea
+    name: top_section_text
+    label: Top section text
+- type: field_group_list
+  name: testimonials
+  label: Testimonials
+  description: Testimonials from people who have watched the Passion Play before.
+  fields:
+  - type: textarea
+    name: testimonial_content
+    label: Testimonial content
+    config:
+      required: true
+  - type: text
+    name: testimonial_author
+    label: Testimonial author
+    config:
+      required: true
+- type: field_group
+  name: bottom_section
+  label: Bottom section
+  fields:
+  - type: text
+    name: bottom_section_title
+    label: Bottom section title
+    config:
+      required: false
+  - type: textarea
+    name: bottom_section_text
+    label: Bottom section text
