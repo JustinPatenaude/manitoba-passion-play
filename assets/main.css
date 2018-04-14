@@ -2200,28 +2200,40 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 20px 0;
   font-weight: 700;
   text-transform: uppercase; }
 
-h1 {
-  font-size: 40px; }
+h1, .h1 {
+  font-size: 36px; }
 
-h2 {
+h2, .h2 {
   font-size: 32px; }
 
-h3 {
+h3, .h3 {
+  font-size: 28px; }
+
+h4, .h4 {
   font-size: 24px; }
 
-h4, h5, h6 {
+h5, .h5 {
+  font-size: 20px; }
+
+h6, .h6 {
   font-size: 16px; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #fff; }
   a:hover {
     text-decoration: underline; }
 
+p {
+  margin: 0 0 10px 0; }
+
 img {
-  display: block; }
+  display: block;
+  max-width: 100%; }
 
 strong {
   font-weight: 700; }
@@ -2229,7 +2241,8 @@ strong {
 blockquote {
   position: relative;
   display: inline-block;
-  margin: 0 0 24px 0; }
+  margin: 0 0 20px 0;
+  font-size: 24px; }
   blockquote p {
     position: relative;
     z-index: 5; }
@@ -2243,7 +2256,7 @@ blockquote {
   blockquote:before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 10px;
     left: -15px;
     z-index: 1;
     display: block;
@@ -2255,7 +2268,7 @@ blockquote {
   blockquote:after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     right: -15px;
     z-index: 1;
     display: block;
@@ -2269,12 +2282,35 @@ blockquote {
 =================================*/
 .button {
   display: inline-block;
-  padding: 10px 15px;
+  vertical-align: top;
+  padding: 5px 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
   background: #926BA2;
   border-radius: 4px; }
   .button:hover {
     text-decoration: none;
-    background: #704F7D; }
+    background: #60406D; }
+  .button.button--invert {
+    color: #926BA2;
+    background: #fff; }
+    .button.button--invert:hover {
+      text-decoration: none;
+      color: #fff;
+      background: #926BA2; }
+
+.un-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+.inline {
+  display: inline-block;
+  vertical-align: top; }
+
+.padding {
+  padding-bottom: 20px; }
 
 /* Header
 =================================*/
@@ -2296,11 +2332,17 @@ blockquote {
     width: 100%; }
 
 .nav-link {
+  display: inline-block;
+  vertical-align: top;
   margin-right: 20px;
   font-weight: 700;
+  line-height: 34px;
   text-transform: uppercase;
   color: #fff;
   text-decoration: none; }
+  .nav-link:hover {
+    text-decoration: none;
+    color: #926BA2; }
 
 .header-bottom {
   padding: 10px;
@@ -2333,8 +2375,40 @@ blockquote {
     color: #fff; }
 
 .home-section {
-  padding: 40px 0; }
+  padding: 60px 0; }
 
 .home-testimonials {
   text-align: center;
   background: #926BA2; }
+
+/* Footer
+=================================*/
+.footer-top {
+  padding: 30px;
+  text-align: center;
+  background: #60406D; }
+  .footer-top h3 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px 0 0;
+    font-weight: 300;
+    line-height: 34px;
+    text-transform: none; }
+
+.footer-middle {
+  padding: 30px;
+  background: #926BA2; }
+
+.logo-footer {
+  display: block;
+  width: 100%; }
+
+.footer-bottom {
+  padding: 5px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: #926BA2;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); }
+  .footer-bottom p {
+    margin: 0;
+    opacity: 0.5; }
