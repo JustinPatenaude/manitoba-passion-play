@@ -16,7 +16,7 @@ layout: default
 
           <div class="col-6">
             <h3>{{ page.top_section_title }}</h3>
-            <p>{{ page.top_section_text }}</p>
+            <p>{{ page.top_section_content }}</p>
           </div>
 
       </div>
@@ -27,8 +27,8 @@ layout: default
   <div class="home-section home-testimonials">
     {% for testimonial in page.testimonials %}
     <blockquote>
-      <p>{{ page.testimonial_content }}</p>
-      <cite>{{ page.testimonial_author }}</cite>
+      <p>{{ testimonial.testimonial_content }}</p>
+      <cite>{{ testimonial.testimonial_author }}</cite>
     </blockquote>
     {% endfor %}
   </div>
@@ -39,7 +39,7 @@ layout: default
 
           <div class="col-6">
             <h3>{{ page.bottom_section_title }}</h3>
-            <p>{{ page.bottom_section_text }}</p>
+            <p>{{ page.bottom_section_content }}</p>
           </div>
 
       </div>
