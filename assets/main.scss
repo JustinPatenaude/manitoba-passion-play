@@ -8,7 +8,7 @@
 /* Variables
 =================================*/
 $colorAccent: #926BA2;
-$colorAccentHover: #704F7D;
+$colorAccentDark: #60406D;
 
 @mixin backgroundAccent($opacity) {
   background: rgba(146, 107, 162, $opacity);
@@ -31,21 +31,29 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 20px 0;
   font-weight: 700;
   text-transform: uppercase;
 }
-h1 {font-size: 40px;}
-h2 {font-size: 32px;}
-h3 {font-size: 24px;}
-h4, h5, h6 {font-size: 16px;}
+h1, .h1 {font-size: 36px;}
+h2, .h2 {font-size: 32px;}
+h3, .h3 {font-size: 28px;}
+h4, .h4 {font-size: 24px;}
+h5, .h5 {font-size: 20px;}
+h6, .h6 {font-size: 16px;}
 a {
   text-decoration: none;
+  color: #fff;
   &:hover {
     text-decoration: underline;
   }
 }
+p {
+  margin: 0 0 10px 0;
+}
 img {
   display: block;
+  max-width: 100%;
 }
 strong {
   font-weight: 700;
@@ -53,7 +61,8 @@ strong {
 blockquote {
   position: relative;
   display: inline-block;
-  margin: 0 0 24px 0;
+  margin: 0 0 20px 0;
+  font-size: 24px;
   p {
     position: relative;
     z-index: 5;
@@ -69,7 +78,7 @@ blockquote {
   &:before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 10px;
     left: -15px;
     z-index: 1;
     display: block;
@@ -82,7 +91,7 @@ blockquote {
   &:after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     right: -15px;
     z-index: 1;
     display: block;
@@ -98,13 +107,38 @@ blockquote {
 =================================*/
 .button {
   display: inline-block;
-  padding: 10px 15px;
+  vertical-align: top;
+  padding: 5px 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
   background: $colorAccent;
   border-radius: 4px;
   &:hover {
     text-decoration: none;
-    background: $colorAccentHover;
+    background: $colorAccentDark;
   }
+  &.button--invert {
+    color: $colorAccent;
+    background: #fff;
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+      background: $colorAccent;
+    }
+  }
+}
+.un-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.inline {
+  display: inline-block;
+  vertical-align: top;
+}
+.padding {
+  padding-bottom: 20px;
 }
 
 /* Header
@@ -128,11 +162,18 @@ blockquote {
   }
 }
 .nav-link {
+  display: inline-block;
+  vertical-align: top;
   margin-right: 20px;
   font-weight: 700;
+  line-height: 34px;
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: $colorAccent;
+  }
 }
 .header-bottom {
   padding: 10px;
@@ -169,9 +210,44 @@ blockquote {
   }
 }
 .home-section {
-  padding: 40px 0;
+  padding: 60px 0;
 }
 .home-testimonials {
   text-align: center;
   background: $colorAccent;
+}
+
+/* Footer
+=================================*/
+.footer-top {
+  padding: 30px;
+  text-align: center;
+  background: $colorAccentDark;
+  h3 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px 0 0;
+    font-weight: 300;
+    line-height: 34px;
+    text-transform: none;
+  }
+}
+.footer-middle {
+  padding: 30px;
+  background: $colorAccent;
+}
+.logo-footer {
+  display: block;
+  width: 100%;
+}
+.footer-bottom {
+  padding: 5px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: $colorAccent;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  p {
+    margin: 0;
+    opacity: 0.5;
+  }
 }
