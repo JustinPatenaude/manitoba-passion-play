@@ -9,16 +9,12 @@ fields:
   label: Layout
   hidden: true
   default: home
-- type: field_group
-  name: top_section
-  label: Top section
-  fields:
-  - type: text
-    name: top_section_title
-    label: Top section title
-  - type: textarea
-    name: top_section_text
-    label: Top section text
+- type: text
+  label: Top section title
+  name: top_section_title
+- type: textarea
+  label: Top section content
+  name: top_section_content
 - type: field_group_list
   name: testimonials
   label: Testimonials
@@ -34,15 +30,9 @@ fields:
     label: Testimonial author
     config:
       required: true
-- type: field_group
-  name: bottom_section
-  label: Bottom section
-  fields:
-  - type: text
-    name: bottom_section_title
-    label: Bottom section title
-    config:
-      required: false
-  - type: textarea
-    name: bottom_section_text
-    label: Bottom section text
+- type: text
+  name: bottom_section_title
+  label: Bottom section title
+- type: textarea
+  name: bottom_section_content
+  label: Bottom section content
