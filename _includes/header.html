@@ -1,3 +1,4 @@
+{% assign homePage = site.pages | where: 'layout', 'home' %}
 <header class="header {{ page.layout | downcase | escape }}" role="banner">
 
   <div class="header-top">
@@ -17,9 +18,10 @@
 
     </div>
   </div>
-
-  <div class="header-bottom">
-    <p>Celebrating its 19th season, this summer's performance dates are July 7 and 8 at 6:30 pm and July 13, 14, and 15 at 7:30 pm</p>
-  </div>
+  {% if homePage[0].show_promotional_banner %}
+    <div class="header-bottom">
+      <p>{{ homePage[0].promotional_banner }}</p>
+    </div>
+  {% endif %}
 
 </header>
