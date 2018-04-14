@@ -15,4 +15,7 @@ bottom_section_content: Returning for 2018, a group of musicians led by Christia
   Kantz and Jason Dyck of Winkler will volunteer their time and talents to provide
   musical accompaniment composed by Micheal Janzen and commissioned by Oak Valley
   for Manitoba's Passion Play.
+show_promotional_banner: true
+promotional_banner: Celebrating its 19th season, this summer's performance dates are
+  July 7 and 8 at 6:30 pm and July 13, 14, and 15 at 7:30 pm
 ---

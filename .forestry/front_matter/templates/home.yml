@@ -9,6 +9,16 @@ fields:
   label: Layout
   hidden: true
   default: home
+- type: boolean
+  name: show_promotional_banner
+  label: Show promotional banner?
+  description: If checked, the promotional banner will be visible.
+  default: true
+- type: text
+  label: Promotional banner
+  name: promotional_banner
+  description: The banner at the top of the page, under the navigation. Use this to
+    advertise the play dates or to thank your viewers for a good season.
 - type: text
   label: Top section title
   name: top_section_title
