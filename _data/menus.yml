@@ -1,6 +1,43 @@
 ---
 header:
-- identifier: api
-  url: "/api"
-  weight: -1
-  title: API Documentation
+- url: "/"
+  weight: 3
+  title: Buy Tickets
+- url: "/"
+  weight: 2
+  title: Contact
+- url: "/"
+  weight: 1
+  title: Photos
+- url: "/"
+  weight: 1
+  parent: item_MHvsSkb
+  title: FAQ
+- url: "/"
+  weight: 1
+  parent: item_MHvsSkb
+  title: Concessions
+- url: "/"
+  weight: 1
+  parent: item_MHvsSkb
+  title: Seating
+- url: "/"
+  weight: 1
+  parent: item_MHvsSkb
+  title: Parking
+- url: "/"
+  weight: 1
+  parent: item_MHvsSkb
+  title: What to bring?
+- url: "/"
+  weight: 1
+  parent: item_MHvsSkb
+  title: Map to Theatre Site
+- url: "/"
+  weight: 1
+  parent: item_MHvsSkb
+  title: History
+- url: "/"
+  weight: 0
+  identifier: item_MHvsSkb
+  title: About
