@@ -11,16 +11,26 @@
         </div>
 
         <div class="col-8_sm-12 text-right text-center-sm">
-          {% for item in site.menus.header %}
-            <a class="{% if item.last %}button{% else %}nav-link{% endif %}" href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
-            {% if item.children %}
-              <div class="nav-link-sub-section">
-                {% for subItem in item.children %}
-                  <a class="nav-sub-link" href="{{ subItem.url }}" title="Go to {{ subItem.title }}">{{ subItem.title }}</a>
-                {% endfor %}
-              </div>
-            {% endif %}
-          {% endfor %}
+          <ul class="nav-link-section">
+            {% for item in site.menus.header %}
+              {% unless item.parent %}
+                <li class="nav-link-item">
+                  <a class="{% if item.title == 'Buy Tickets' %}button{% else %}nav-link{% endif %}" href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
+                  {% if item.identifier %}
+                    <ul class="nav-link-sub-section">
+                      {% for subItem in site.menus.header %}
+                        {% if subItem.parent == item.identifier %}
+                          <li class="nav-link-sub-item">
+                            <a class="nav-sub-link" href="{{ subItem.url }}" title="Go to {{ subItem.title }}">{{ subItem.title }}</a>
+                          </li>
+                        {% endif %}
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                </li>
+              {% endunless %}
+            {% endfor %}
+          </ul>
         </div>
 
       </div>
