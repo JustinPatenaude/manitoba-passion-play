@@ -11,7 +11,16 @@
         </div>
 
         <div class="col-8_sm-12 text-right text-center-sm">
-          {% include nav-section.html %}
+          {% for item in site.menus.header %}
+            <a class="{% if item.last %}button{% else %}nav-link{% endif %}" href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
+            {% if item.children %}
+              <div class="nav-link-sub-section">
+                {% for subItem in item.children %}
+                  <a class="nav-sub-link" href="{{ subItem.url }}" title="Go to {{ subItem.title }}">{{ subItem.title }}</a>
+                {% endfor %}
+              </div>
+            {% endif %}
+          {% endfor %}
         </div>
 
       </div>
