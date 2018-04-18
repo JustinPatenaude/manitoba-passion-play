@@ -1,53 +1,53 @@
 ---
 header:
-- identifier: item_MHvsSkb
-  url: "/"
-  weight: 0
-  title: About
 - identifier: 
   url: "/"
-  weight: 1
+  weight: 4
+  title: Buy Tickets
+- identifier: 
+  url: "/"
+  weight: 3
+  title: Contact
+- identifier: 
+  url: "/"
+  weight: 7
+  parent: item_MHvsSkb
+  title: FAQ
+- identifier: 
+  url: "/"
+  weight: 6
+  parent: item_MHvsSkb
+  title: Concessions
+- identifier: 
+  url: "/"
+  weight: 5
   parent: item_MHvsSkb
   title: History
 - identifier: 
   url: "/"
-  weight: 1
+  weight: 4
+  parent: item_MHvsSkb
+  title: Parking
+- identifier: 
+  url: "/"
+  weight: 3
+  parent: item_MHvsSkb
+  title: What to bring?
+- identifier: 
+  url: "/"
+  weight: 2
   parent: item_MHvsSkb
   title: Map to Theatre Site
 - identifier: 
   url: "/"
   weight: 1
   parent: item_MHvsSkb
-  title: What to bring?
-- identifier: 
-  url: "/"
-  weight: 1
-  parent: item_MHvsSkb
-  title: Parking
-- identifier: 
-  url: "/"
-  weight: 1
-  parent: item_MHvsSkb
   title: Seating
-- identifier: 
+- identifier: item_MHvsSkb
   url: "/"
   weight: 1
-  parent: item_MHvsSkb
-  title: Concessions
-- identifier: 
-  url: "/"
-  weight: 1
-  parent: item_MHvsSkb
-  title: FAQ
-- identifier: 
-  url: "/"
-  weight: 1
-  title: Photos
+  title: About
 - identifier: 
   url: "/"
   weight: 2
-  title: Contact
-- identifier: 
-  url: "/"
-  weight: 3
-  title: Buy Tickets
+  title: Photos
