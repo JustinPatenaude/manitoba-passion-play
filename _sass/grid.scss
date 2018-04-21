@@ -16,7 +16,7 @@ $medium: 1024px;
 $small: 768px;
 $extrasmall: 480px;
 $tiny: 320px;
-$gl-gutter: 20px;
+$gl-gutter: 24px;
 
 $postSmall: $small + 1;
 $gl-xs: "screen and (max-width: #{$extrasmall})";
@@ -152,7 +152,8 @@ $glp_col-11-12: (100%/11);
 /*==============================================================================
 	#GRIDLEX
 ==============================================================================*/
-.container {
+.container,
+.container-full {
 	max-width: $container;
 	margin: 0 auto;
 }
@@ -410,5 +411,5 @@ html.lte-ie9 .col, html.lte-ie9 [class*="col-"] {
 @media only screen and (max-width: $large) {
 	.container {
 		padding: 0 $gl-gutter;
-	}
+  }
 }

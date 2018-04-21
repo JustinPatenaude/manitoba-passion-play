@@ -8,14 +8,14 @@
   </div>
 
   <div class="footer-middle">
-    <div class="container">
+    <div class="container-full">
       <div class="grid">
 
-        <div class="col-3">
+        <div class="footer-section col-3_sm-12">
           <a class="logo-footer" href="{{ "/" | relative_url }}"><img src="{{ "/assets/images/logo.png" | relative_url }}"/></a>
         </div>
 
-        <div class="col-3" data-push-left="off-1">
+        <div class="footer-section col-3_sm-12" data-push-left="off-1_sm-0">
           <h4>Contact</h4>
           <ul class="un-list">
             <li>PO Box 84</li>
@@ -26,8 +26,10 @@
           </ul>
         </div>
 
-        <div class="col-3">
+        <div class="footer-section col-3_sm-12">
           <h4>Follow Us</h4>
+          <a class="social-link" href="/"><i class="fab fa-facebook-square"></i></a>
+          <a class="social-link" href="/"><i class="fab fa-twitter-square"></i></a>
         </div>
 
       </div>
@@ -41,5 +43,6 @@
   </div>
 
 </footer>
-
-<!--<script src="{{ "/assets/main.js" | relative_url }}"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+<script src="{{ "/assets/main.js" | relative_url }}"></script>
