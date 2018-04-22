@@ -1,7 +1,7 @@
 ---
 header:
 - identifier: 
-  url: {{ site.url }}"/history/"
+  url: {{ site.baseurl }}"/history/"
   weight: 1
   title: History
 - identifier: item_MHvsSkb
