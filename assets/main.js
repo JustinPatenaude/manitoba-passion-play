@@ -5,4 +5,10 @@ $(document).ready(function(){
   $('.overlay').on('click', function(){
     $('body').removeClass('nav-opened');
   });
+  $('.gallery-item').magnificPopup({
+    type: 'image',
+    gallery:{
+      enabled:true
+    }
+  });
 });
