@@ -2195,7 +2195,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  color: #fff;
+  color: #eee;
   background: #000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2203,7 +2203,8 @@ body {
   transition: transform 0.2s ease-in-out; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 20px 0;
+  margin: 0;
+  margin-bottom: 24px;
   font-weight: 700;
   text-transform: uppercase; }
 
@@ -2238,7 +2239,8 @@ a {
     text-decoration: underline; }
 
 p {
-  margin: 0 0 10px 0; }
+  margin: 0 0 24px 0;
+  letter-spacing: 0.5px; }
 
 img {
   display: block;
@@ -2246,50 +2248,6 @@ img {
 
 strong {
   font-weight: 700; }
-
-blockquote {
-  position: relative;
-  display: inline-block;
-  margin: 0 0 44px 0;
-  font-size: 16px; }
-  blockquote p {
-    position: relative;
-    z-index: 5; }
-    blockquote p:last-of-type {
-      margin-bottom: 0; }
-  blockquote cite {
-    position: absolute;
-    top: calc(100% + 20px);
-    right: 0;
-    z-index: 3;
-    width: 100%;
-    font-style: italic;
-    line-height: 24px;
-    text-align: right; }
-  blockquote:before {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: -15px;
-    z-index: 1;
-    display: block;
-    width: 30px;
-    height: 28px;
-    background-image: url("/manitoba-passion-play/assets/images/quote-left.svg");
-    background-repeat: no-repeat;
-    opacity: 0.25; }
-  blockquote:after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    right: -15px;
-    z-index: 1;
-    display: block;
-    width: 30px;
-    height: 28px;
-    background-image: url("/manitoba-passion-play/assets/images/quote-right.svg");
-    background-repeat: no-repeat;
-    opacity: 0.25; }
 
 /* Global
 =================================*/
@@ -2336,11 +2294,13 @@ blockquote {
 
 /* Header
 =================================*/
-.header {
+.template-home .header {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 5; }
+
+.header {
   width: 100%; }
 
 .header-top {
@@ -2390,7 +2350,7 @@ blockquote {
   padding: 8px 16px;
   text-align: center;
   list-style-type: none;
-  background: #000;
+  background: #60406D;
   border-radius: 4px;
   transform: translate(-50%, 0); }
   .nav-link-sub-section:before {
@@ -2403,7 +2363,7 @@ blockquote {
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid #60406D;
     transform: translate(-50%, 0); }
 
 .nav-sub-link {
@@ -2505,6 +2465,69 @@ body {
 .home-testimonials {
   text-align: center;
   background: #926BA2; }
+  .home-testimonials blockquote {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 44px 0;
+    font-size: 16px; }
+    .home-testimonials blockquote p {
+      position: relative;
+      z-index: 5; }
+      .home-testimonials blockquote p:last-of-type {
+        margin-bottom: 0; }
+    .home-testimonials blockquote cite {
+      position: absolute;
+      top: calc(100% + 20px);
+      right: 0;
+      z-index: 3;
+      width: 100%;
+      font-style: italic;
+      line-height: 24px;
+      text-align: right; }
+    .home-testimonials blockquote:before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: -15px;
+      z-index: 1;
+      display: block;
+      width: 30px;
+      height: 28px;
+      background-image: url("/manitoba-passion-play/assets/images/quote-left.svg");
+      background-repeat: no-repeat;
+      opacity: 0.25; }
+    .home-testimonials blockquote:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      right: -15px;
+      z-index: 1;
+      display: block;
+      width: 30px;
+      height: 28px;
+      background-image: url("/manitoba-passion-play/assets/images/quote-right.svg");
+      background-repeat: no-repeat;
+      opacity: 0.25; }
+
+/* Content
+=================================*/
+.page {
+  padding: 40px 0; }
+
+.rte h1, .rte h2, .rte h3, .rte h4, .rte h5, .rte h6 {
+  margin-top: 32px; }
+.rte p:last-of-type {
+  margin-bottom: 0; }
+.rte a {
+  text-decoration: underline;
+  color: #c9a6d8; }
+  .rte a:hover {
+    text-decoration: none; }
+.rte blockquote {
+  margin-left: 0;
+  padding: 16px 0 16px 32px;
+  font-style: italic;
+  border-left: 3px solid #eee; }
 
 /* Footer
 =================================*/
@@ -2515,9 +2538,9 @@ body {
   .footer-top h3 {
     display: inline-block;
     vertical-align: top;
-    margin: 0 20px 0 0;
+    margin: 0 24px 0 0;
     font-weight: 300;
-    line-height: 34px;
+    line-height: 30px;
     text-transform: none; }
 
 .footer-middle {
@@ -2549,7 +2572,7 @@ body {
 /* Responsive
 =================================*/
 @media only screen and (max-width: 1024px) {
-  .header {
+  .template-home .header {
     position: relative; }
 
   .banner img {
@@ -2557,14 +2580,15 @@ body {
 
   .banner-text {
     left: 24px;
-    width: 75%; } }
+    width: 75%; }
+    .banner-text h2 {
+      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); } }
 @media only screen and (max-width: 768px) {
   .banner-text {
     width: calc(100% - 48px); }
     .banner-text h2 {
       font-size: 32px;
-      line-height: 36px;
-      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); }
+      line-height: 36px; }
 
   .home-testimonials {
     padding: 40px 32px; }
