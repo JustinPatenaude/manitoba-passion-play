@@ -11,7 +11,7 @@ layout: default
         <div class="gallery">
           <div class="grid">
             {% for photo in page.photos %}
-              <div class="col-4 padding">
+              <div class="col-4_sm-6 padding">
                 <div class="gallery-item" href="{{ photo | relative_url }}">
                   <img class="gallery-img" src="{{ photo | relative_url }}" />
                 </div>
