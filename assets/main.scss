@@ -36,8 +36,6 @@ body {
   background: #000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -223,15 +221,22 @@ strong {
 
 /* Mobile Menu
 =================================*/
-body {
-  overflow-x: hidden;
-  &.nav-opened {
+.nav-opened {
+  .wrapper {
     transform: translate(-200px, 0);
     overflow: hidden;
-    .overlay {
-      display: block;
-    }
   }
+  .overlay {
+    display: block;
+  }
+}
+.wrapper {
+  position: relative;
+  z-index: 10;
+  background: #000;
+  overflow-x: hidden;
+  -webkit-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 .overlay {
   position: absolute;
@@ -247,7 +252,7 @@ body {
 .mobile-menu {
   position: absolute;
   top: 0;
-  left: 100%;
+  right: 0;
   z-index: 5;
   width: 200px;
   height: 100vh;
@@ -410,8 +415,9 @@ body {
   background: $colorAccent;
 }
 .logo-footer {
-  display: block;
+  display: inline-block;
   width: 100%;
+  max-width: 250px;
 }
 .social-link {
   display: inline-block;
@@ -481,5 +487,8 @@ body {
   }
   .footer-section {
     margin-bottom: $gutter-xlg;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }

@@ -6,7 +6,7 @@
 
       <div class="grid-middle">
 
-        <div class="col-4_md-8 text-center-sm">
+        <div class="col-4_md-8_sm-7 text-center-sm">
           <a class="logo" href="{{ "/" | relative_url }}"><img src="{{ "/assets/images/logo.png" | relative_url }}"/></a>
         </div>
 
@@ -33,7 +33,7 @@
           </ul>
         </div>
 
-        <div class="col-4 md-show text-right">
+        <div class="col-4_sm-5 md-show text-right">
           <div class="button js-mobile-menu">Menu <i class="fas fa-bars"></i></div>
         </div>
 
@@ -48,25 +48,3 @@
   {% endif %}
 
 </header>
-<div class="mobile-menu">
-  <ul class="mobile-nav-link-section">
-    {% for item in site.menus.header %}
-      {% unless item.parent %}
-        <li class="mobile-nav-link-item">
-          <a class="{% if item.title == 'Buy Tickets' %}button button--dark button--full{% else %}mobile-nav-link{% endif %}" href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
-          {% if item.identifier %}
-            <ul class="mobile-nav-link-sub-section">
-              {% for subItem in site.menus.header %}
-                {% if subItem.parent == item.identifier %}
-                  <li class="mobile-nav-link-sub-item">
-                    <a class="mobile-nav-sub-link" href="{{ subItem.url }}" title="Go to {{ subItem.title }}">{{ subItem.title }}</a>
-                  </li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-          {% endif %}
-        </li>
-      {% endunless %}
-    {% endfor %}
-  </ul>
-</div>
