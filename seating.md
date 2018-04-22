@@ -8,4 +8,4 @@ Our sloped grassed amphitheatre provides room for more than 1000 spectators. You
 Grandstand and bench seating is available toward the back of the seating area.
 Upon your arrival ushers will direct you to the seating area of your choice.
 
-![The slopped grassed amphotheatre]({{ site.baseurl }}/assets/images/seating.jpg "The slopped grassed amphotheatre")
+![The slopped grassed amphitheatre]('/manitoba-passion-play/assets/images/seating.jpg' "The slopped grassed amphitheatre")
