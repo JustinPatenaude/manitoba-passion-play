@@ -1,5 +1,6 @@
 ---
 layout: home
+title: Home
 top_section_title: 2018 marks our 19th Season!
 top_section_content: "Once again Oak Valley Productions Inc. presents the inspiring
   drama of Manitoba's Passion Play at its scenic outdoor theatre site near La Riviere,
