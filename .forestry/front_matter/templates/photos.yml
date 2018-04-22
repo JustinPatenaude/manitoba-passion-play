@@ -1,0 +1,8 @@
+---
+hide_body: true
+is_partial: false
+fields:
+- type: image_gallery
+  label: Photos
+  name: photos
+  description: Add photos that will be visible in a gallery.
