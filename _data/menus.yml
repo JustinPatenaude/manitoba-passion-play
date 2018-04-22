@@ -16,12 +16,12 @@ header:
   url: "/manitoba-passion-play/faqs/"
   weight: 7
   parent: item_MHvsSkb
-  title: FAQs
+  title: Seating
 - identifier: 
   url: "/manitoba-passion-play/concessions/"
   weight: 6
   parent: item_MHvsSkb
-  title: Concessions
+  title: Map to Theatre Site
 - identifier: 
   url: "/manitoba-passion-play/parking/"
   weight: 4
@@ -31,12 +31,12 @@ header:
   url: "/manitoba-passion-play/what-to-bring/"
   weight: 3
   parent: item_MHvsSkb
-  title: What to bring?
+  title: History
 - identifier: 
   url: "/manitoba-passion-play/map-to-theatre-site/"
   weight: 2
   parent: item_MHvsSkb
-  title: Map to Theatre Site
+  title: Concessions
 - identifier: 
   url: "/manitoba-passion-play/seating/"
   weight: 1
