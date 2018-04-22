@@ -4,6 +4,8 @@
 
 @import "grid";
 @import "normalize";
+@import "magnific-popup-settings";
+@import "magnific-popup";
 
 /* Variables
 =================================*/
@@ -392,6 +394,35 @@ strong {
     padding: $gutter-sm 0 $gutter-sm $gutter-lg;
     font-style: italic;
     border-left: 3px solid #eee;
+  }
+}
+.map {
+  margin-bottom: 24px;
+  background: #333;
+}
+
+/* Gallery
+=================================*/
+.gallery-item {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 100%;
+  background: #333;
+  cursor: pointer;
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+  &:hover {
+    background: $colorAccent;
+  }
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    max-width: 100%;
+    max-height: 100%;
+    transform: translate(-50%, -50%);
   }
 }
 

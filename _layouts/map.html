@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="page">
+  <div class="container">
+    <div class="grid-center">
+
+      <div class="col-6_md-8_sm-10_xs-12">
+        <h1>{{ page.title }}</h1>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d83361.78435564182!2d-98.680345!3d49.237432!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52c2e8348bf8a77d%3A0xad12ddd60af8aae6!2sLa+Rivi%C3%A8re%2C+MB+R0G+1A0!5e0!3m2!1sen!2sca!4v1524364447572" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="rte">
+          <p><a href="http://maps.google.ca/maps?f=q&source=embed&hl=en&geocode=&q=La+Rivi%C3%A8re,+Manitoba&aq=1&sll=49.891235,-97.15369&sspn=46.110979,114.169922&ie=UTF8&hq=&hnear=La+Rivi%C3%A8re,+Division+No.+4,+Manitoba&ll=49.237432,-98.680345&spn=0.078458,0.145912&z=12&iwloc=A">View larger map</a></p>
+          {{ page.content | markdownify }}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

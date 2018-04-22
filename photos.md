@@ -3,8 +3,6 @@ layout: photos
 title: Photos
 permalink: "/photos/"
 photos:
-- "/assets/media/meditation-01.jpg"
-- "/assets/media/meditation-02.jpg"
 - "/assets/media/photo-01.jpg"
 - "/assets/media/photo-02.jpg"
 - "/assets/media/photo-05.jpg"
@@ -21,4 +19,3 @@ photos:
 - "/assets/media/photo-16.jpg"
 - "/assets/media/photo-17.jpg"
 ---
-Photos will go here
