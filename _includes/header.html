@@ -1,5 +1,5 @@
 {% assign homePage = site.pages | where: 'layout', 'home' %}
-<header class="header {{ page.layout | downcase | escape }}" role="banner">
+<header class="header" role="banner">
 
   <div class="header-top">
     <div class="container-full">
@@ -15,7 +15,7 @@
             {% for item in site.menus.header %}
               {% unless item.parent %}
                 <li class="nav-link-item">
-                  <a class="{% if item.title == 'Buy Tickets' %}button{% else %}nav-link{% endif %}" href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }} {% if item.identifier %}<i class="fas fa-caret-down"></i>{% endif %}</a>
+                  <a class="{% if item.title == 'Get Tickets' %}button{% else %}nav-link{% endif %}" href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }} {% if item.identifier %}<i class="fas fa-caret-down"></i>{% endif %}</a>
                   {% if item.identifier %}
                     <ul class="nav-link-sub-section">
                       {% for subItem in site.menus.header %}
