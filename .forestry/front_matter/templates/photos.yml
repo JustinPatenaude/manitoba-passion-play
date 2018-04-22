@@ -1,0 +1,13 @@
+---
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  default: photos
+- type: image_gallery
+  label: Photos
+  name: photos
+  description: Add photos that will be visible in a gallery.
