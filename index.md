@@ -12,10 +12,11 @@ testimonials:
     we wouldn't hesitate to return.
   testimonial_author: Bill & Valerie, Teulon, MB
 bottom_section_title: Live Orchestra
-bottom_section_content: Returning for 2018, a group of musicians led by Christian
-  Kantz and Jason Dyck of Winkler will volunteer their time and talents to provide
-  musical accompaniment composed by Micheal Janzen and commissioned by Oak Valley
-  for Manitoba's Passion Play.
+bottom_section_content: Returning for 2018, a group of musicians led by conductor
+  Jason Vanwynsberghe of Pilot Mound  come from across Southern Manitoba and  have
+  been rehearsing and volunteering their time and talents to provide musical accompaniment
+  composed by Micheal Janzen and commissioned by Oak Valley for Manitoba's Passion
+  Play.
 show_promotional_banner: true
 promotional_banner: Celebrating its 19th season, this summer's performance dates are
   July 7 and 8 at 6:30 pm and July 13, 14, and 15 at 7:30 pm
