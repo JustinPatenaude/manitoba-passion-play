@@ -26,10 +26,12 @@ layout: default
 
   <div class="home-section home-testimonials">
     {% for testimonial in page.testimonials %}
-    <blockquote>
-      <p>{{ testimonial.testimonial_content }}</p>
-      <cite>{{ testimonial.testimonial_author }}</cite>
-    </blockquote>
+    <div class="home-testimonials-slide">
+      <blockquote>
+        <p>{{ testimonial.testimonial_content }}</p>
+        <cite>{{ testimonial.testimonial_author }}</cite>
+      </blockquote>
+    </div>
     {% endfor %}
   </div>
 

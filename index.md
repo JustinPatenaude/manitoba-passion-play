@@ -11,6 +11,14 @@ testimonials:
 - testimonial_content: We really enjoyed this production. It is our second time and
     we wouldn't hesitate to return.
   testimonial_author: Bill & Valerie, Teulon, MB
+- testimonial_content: We have attended our church services each year for many years...have watched movies about the story of Christ's death and resurrection, but never before have we actually felt like we were a part of Christ's story of who He was, how He and His mother and disciples and others acted and reacted. Thank you for the moving and beautiful portrayal of this most important story.
+  testimonial_author: Glen & Val
+- testimonial_content: We both enjoyed the production; it was the focal point of our weekend get away with another couple.
+  testimonial_author: Jack & Lynne
+- testimonial_content: Very well done. Much work involved. Lots going on to hold the attention of the audience. Wonderful site - well organized. Worth the 4 hour drive to get here.
+  testimonial_author: Whitewood, SK
+- testimonial_content: Your show was absolutely fabulous. The acting was the best. I have been to the Passion Play in South Dakota but was more moved by yours. I'll be telling all my friends.
+  testimonial_author: Ena
 bottom_section_title: Live Orchestra
 bottom_section_content: Returning for 2018, a group of musicians led by conductor
   Jason Vanwynsberghe of Pilot Mound  come from across Southern Manitoba and  have

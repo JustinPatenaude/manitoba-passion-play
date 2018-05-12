@@ -6,6 +6,7 @@
 @import "normalize";
 @import "magnific-popup-settings";
 @import "magnific-popup";
+@import "slick-slider";
 
 /* Variables
 =================================*/
@@ -217,7 +218,7 @@ strong {
   @include backgroundAccent(0.4);
   p {
     margin: 0;
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -320,7 +321,8 @@ strong {
   blockquote {
     position: relative;
     display: inline-block;
-    margin: 0 0 44px 0;
+    max-width: 600px;
+    margin: 20px 0 44px 0;
     font-size: 16px;
     p {
       position: relative;
@@ -365,6 +367,33 @@ strong {
       background-repeat: no-repeat;
       opacity: 0.25;
     }
+  }
+}
+.home-testimonials-slide {
+  cursor: -webkit-grab;
+  &:focus {
+    outline: 0;
+  }
+}
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  padding: 0;
+  color: #fff;
+  background: none;
+  border: 0;
+  opacity: 0.5;
+  cursor: pointer;
+  transform: translate(0, -50%);
+  &:hover {
+    opacity: 1;
+  }
+  &.slick-prev  {
+    left: 20px;
+  }
+  &.slick-next {
+    right: 20px;
   }
 }
 
@@ -494,6 +523,11 @@ strong {
 }
 
 @media only screen and (max-width: 768px) {
+  .header-bottom {
+    p {
+      font-size: 14px;
+    }
+  }
   .banner-text {
     width: calc(100% - 48px);
     h2 {
@@ -503,6 +537,22 @@ strong {
   }
   .home-testimonials {
     padding: $gutter-xlg $gutter-lg;
+    blockquote {
+      &:before {
+        left: 0;
+      }
+      &:after {
+        right: 0;
+      }
+    }
+  }
+  .slick-arrow {
+    &.slick-prev {
+      left: 10px;
+    }
+    &.slick-next {
+      right: 10px;
+    }
   }
   .footer-top {
     padding: $gutter-md;
