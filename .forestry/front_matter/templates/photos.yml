@@ -1,6 +1,4 @@
 ---
-pages:
-- photos.md
 hide_body: true
 is_partial: false
 fields:
@@ -13,3 +11,5 @@ fields:
   label: Photos
   name: photos
   description: Add photos that will be visible in a gallery.
+pages:
+- photos.md

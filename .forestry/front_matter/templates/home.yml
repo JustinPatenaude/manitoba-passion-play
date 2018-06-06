@@ -1,6 +1,4 @@
 ---
-pages:
-- index.md
 hide_body: true
 is_partial: false
 fields:
@@ -46,3 +44,5 @@ fields:
 - type: textarea
   name: bottom_section_content
   label: Bottom section content
+pages:
+- index.md
