@@ -16,12 +16,10 @@
 title: Manitoba Passion Play
 email: justinpatenaude92@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/manitoba-passion-play" # the subpath of your site, e.g. /blog
+  Once again Oak Valley Productions Inc. presents the inspiring drama of Manitoba's Passion Play at its scenic outdoor theatre site near La Riviere, Manitoba. Numerous volunteers from all across southern Manitoba, including cast, crew, front of house personnel and many more work together to present this unique Manitoba event. Year after year many are still discovering this hidden gem.
+baseurl: "" # the subpath of your site, e.g. /blog
 #baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://justinpatenaude.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://www.passionplay.ca/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
