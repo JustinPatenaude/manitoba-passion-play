@@ -2,11 +2,6 @@
 layout: page
 title: Tickets
 permalink: "/tickets/"
-menu:
-  header:
-    name: Get Tickets
-    identifier: 
-    weight: 5
 ---
 ### Prices
 - Adult: $18.00 in advance (available up to 24 hours prior to each performance)

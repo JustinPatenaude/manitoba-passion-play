@@ -2,11 +2,6 @@
 layout: page
 title: What to Bring
 permalink: "/what-to-bring/"
-menu:
-  header:
-    name: Info
-    identifier: item_MHvsSkb
-    weight: 2
 ---
 ### Clothing
 Manitoba summers can be unpredictable so we encourage you to bring the following:

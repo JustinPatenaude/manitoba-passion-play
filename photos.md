@@ -18,9 +18,4 @@ photos:
 - "/assets/media/seating.jpg"
 - "/assets/media/photo-16.jpg"
 - "/assets/media/photo-17.jpg"
-menu:
-  header:
-    name: Photos
-    identifier: 
-    weight: 3
 ---
