@@ -29,6 +29,9 @@ $gutter-xlg: 40px;
 * {
   box-sizing: border-box;
 }
+html {
+  background-color: $colorAccent;
+}
 body {
   position: relative;
   font-family: 'Lato', sans-serif;
@@ -258,7 +261,7 @@ strong {
   right: 0;
   z-index: 5;
   width: 200px;
-  height: 100vh;
+  height: 100%;
   background: $colorAccent;
   overflow-y: scroll;
   .button {

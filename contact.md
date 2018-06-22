@@ -12,7 +12,7 @@ Send your inquiries to:
 - Manitou, Manitoba
 - R0G 1G0
 
-Directions: [map to site](/map-to-site)
+Directions: [map to site](/map-to-theatre-site/)
 
 ### Contact List
 
