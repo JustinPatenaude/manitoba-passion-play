@@ -2,6 +2,11 @@
 layout: page
 title: History
 permalink: "/history/"
+menu:
+  header:
+    name: History
+    identifier: 
+    weight: 1
 ---
 Oak Valley Productions Inc. was established as a non-profit, charitable organization in 1998 to encourage Judeo-Christian family values through the creative expression of the arts and the enjoyment of outdoor leisure activities.
 

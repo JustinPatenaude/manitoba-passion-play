@@ -2,6 +2,11 @@
 layout: page
 title: Contact us
 permalink: "/contact/"
+menu:
+  header:
+    name: Contact
+    identifier: 
+    weight: 4
 ---
 Whether it's to order tickets for one of this summer's performances, forward a comment, volunteer to help out or make a donation to support future productions, we'd love to hear from you!
 

@@ -1,52 +1,7 @@
 ---
 header:
 - identifier: 
-  url: "/manitoba-passion-play/faqs/"
-  weight: 7
-  parent: item_MHvsSkb
-  title: FAQs
-- identifier: 
-  url: "/manitoba-passion-play/map-to-theatre-site/"
-  weight: 6
-  parent: item_MHvsSkb
-  title: Map to Theatre Site
-- identifier: 
-  url: "/manitoba-passion-play/what-to-bring/"
-  weight: 3
-  parent: item_MHvsSkb
-  title: What to Bring
-- identifier: 
-  url: "/manitoba-passion-play/concessions/"
+  url: "/concessions/"
   weight: 2
   parent: item_MHvsSkb
   title: Concessions
-- identifier: 
-  url: "/manitoba-passion-play/history/"
-  weight: 1
-  title: History
-- identifier: item_MHvsSkb
-  url: "/manitoba-passion-play/info/"
-  weight: 2
-  title: Info
-- identifier: 
-  url: "/manitoba-passion-play/seating/"
-  weight: 1
-  parent: item_MHvsSkb
-  title: Seating
-- identifier: 
-  url: "/manitoba-passion-play/parking/"
-  weight: 4
-  parent: item_MHvsSkb
-  title: Parking
-- identifier: 
-  url: "/manitoba-passion-play/photos/"
-  weight: 3
-  title: Photos
-- identifier: 
-  url: "/manitoba-passion-play/contact/"
-  weight: 4
-  title: Contact
-- identifier: 
-  url: "/manitoba-passion-play/tickets/"
-  weight: 5
-  title: Get Tickets

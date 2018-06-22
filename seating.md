@@ -2,6 +2,12 @@
 layout: page
 title: Seating
 permalink: "/seating/"
+menu:
+  header:
+    name: Seating
+    identifier: 
+    weight: 1
+    parent: item_MHvsSkb
 ---
 Our sloped grassed amphitheatre provides room for more than 1000 spectators. You may wish to sit up close on a blanket or bring lawn chairs.
 

@@ -2,6 +2,12 @@
 layout: page
 title: Parking
 permalink: "/parking/"
+menu:
+  header:
+    name: Parking
+    identifier: 
+    weight: 4
+    parent: item_MHvsSkb
 ---
 Please yield to attendants as you enter and exit the site.
 

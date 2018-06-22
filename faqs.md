@@ -2,6 +2,12 @@
 layout: page
 title: Frequently Asked Questions
 permalink: "/faqs/"
+menu:
+  header:
+    name: FAQs
+    identifier: 
+    weight: 6
+    parent: item_MHvsSkb
 ---
 ##### Aren't there lots of mosquitoes in the Valley?
 We have found that even on warm July nights, the pesky little Manitoba residents only show themselves later in the evening. So you may still want to bring some repellant but you'll only need it on the way back to your vehicle after the performance.
