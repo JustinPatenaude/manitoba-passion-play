@@ -22,8 +22,8 @@
         {% for item in site.menus.header %}
           {% unless item.parent %}
             <li class="mobile-nav-link-item">
-              <a class="{% if item.title == 'Get Tickets' %}button button--dark button--full{% else %}mobile-nav-link{% endif %}" href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
               {% if item.identifier %}
+                <span class="{% if item.title == 'Get Tickets' %}button button--dark button--full{% else %}mobile-nav-link mobile-nav-link--fake{% endif %}"  title="Section for {{ item.title }}">{{ item.title }}</span>
                 <ul class="mobile-nav-link-sub-section">
                   {% for subItem in site.menus.header %}
                     {% if subItem.parent == item.identifier %}
@@ -33,6 +33,8 @@
                     {% endif %}
                   {% endfor %}
                 </ul>
+              {% else %}
+                <a class="{% if item.title == 'Get Tickets' %}button button--dark button--full{% else %}mobile-nav-link{% endif %}" href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
               {% endif %}
             </li>
           {% endunless %}

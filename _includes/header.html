@@ -15,8 +15,8 @@
             {% for item in site.menus.header %}
               {% unless item.parent %}
                 <li class="nav-link-item">
-                  <a class="{% if item.title == 'Get Tickets' %}button{% else %}nav-link{% endif %}" href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }} {% if item.identifier %}<i class="fas fa-caret-down"></i>{% endif %}</a>
                   {% if item.identifier %}
+                    <span class="{% if item.title == 'Get Tickets' %}button{% else %}nav-link nav-link--fake{% endif %}" title="Section for {{ item.title }}">{{ item.title }} <i class="fas fa-caret-down"></i></span>
                     <ul class="nav-link-sub-section">
                       {% for subItem in site.menus.header %}
                         {% if subItem.parent == item.identifier %}
@@ -26,6 +26,8 @@
                         {% endif %}
                       {% endfor %}
                     </ul>
+                  {% else %}
+                  <a class="{% if item.title == 'Get Tickets' %}button{% else %}nav-link{% endif %}" href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
                   {% endif %}
                 </li>
               {% endunless %}
