@@ -23,3 +23,6 @@ The story is one of triumph and redemption, however Jesus did suffer greatly at 
 
 ##### How long is the play?
 Running time is approx 2 1/4 hours which includes a 15 minute intermission.
+
+##### What payment options are available on site?
+On site concessions cash preferred. No debit cards accepted on site. 
