@@ -35,3 +35,5 @@ Payment options for Box Office reservations are Visa, Mastercard, cheque or cash
 Cheque payments must be received within 2 weeks of booking. Paid tickets for July performances will be mailed until June 5 for a $1.00 mailing fee. All paid tickets reserved after June 5 will be held at the gate for pick-up on performance nights.
 
 All Bus Group tickets must be reserved through the Passion Play Box Office.
+
+No debit cards accepted on site.
