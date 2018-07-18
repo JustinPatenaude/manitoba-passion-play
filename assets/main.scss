@@ -451,6 +451,19 @@ strong {
   margin-bottom: 24px;
   background: #333;
 }
+.testionials {
+  blockquote {
+    margin: 0 0 $gutter-sm 0;
+    padding: $gutter-sm 0;
+    border: 0;
+  }
+  cite {
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+}
 
 /* Gallery
 =================================*/

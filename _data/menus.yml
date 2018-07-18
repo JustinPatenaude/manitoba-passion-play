@@ -2,9 +2,14 @@
 header:
 - identifier: 
   url: "/faqs/"
-  weight: 7
+  weight: 8
   parent: item_MHvsSkb
   title: FAQs
+- identifier: 
+  url: "/testimonials/"
+  weight: 7
+  parent: item_MHvsSkb
+  title: Testimonials
 - identifier: 
   url: "/map-to-theatre-site/"
   weight: 6
